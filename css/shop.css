@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f4efe7;
+  font-family: "Cormorant Garamond", serif;
+  color: #2f2f2f;
+}
+
+.hero {
+  min-height: 800px;
+  background-image: url(../img/shop-hero.png);
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  justify-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 140px;
+  position: fixed;
+  padding: 1rem;
+}
+
+.logo span {
+  font-size: 1.6rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+}
+.nav-links :hover {
+  color: white;
+  transition: 0.3s;
+  transform: translateY(3px);
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #556b4f;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+}
+
+.hero-text h1 {
+  font-size: 8rem;
+  color: #f1e4d2;
+  font-weight: 500;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-bottom: 4rem;
+}
+
+.intro {
+  text-align: center;
+  padding: 6rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.intro h2 {
+  font-size: 4rem;
+  color: #6b8263;
+  margin-bottom: 2rem;
+}
+
+.intro p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.shop-section {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  padding-bottom: 8rem;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.9);
+}
+.card:hover img {
+  filter: brightness(0.7);
+  transition: filter 0.3s ease;
+}
+
+.card h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f4efe7;
+  font-size: 3rem;
+  font-weight: 400;
+  transition: 0.3s ease;
+  /* background: rgba(100, 89, 56, 0.3);
+  padding: 10px; */
+}
+.card:hover h3 {
+  color: white;
+  transform: translate(-50%, -50%) scale(1.09);
+  background: rgba(102, 95, 76, 0.3);
+  padding: 10px;
+  cursor: pointer;
+}
+footer {
+  background: #d4c1a7;
+  color: white;
+  padding: 4rem 2rem 2rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.footer-box h4 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.footer-box a,
+.footer-box p {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    padding: 1.5rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero-text h1 {
+    font-size: 5rem;
+  }
+
+  .intro h2 {
+    font-size: 2.8rem;
+  }
+
+  .intro p {
+    font-size: 1.4rem;
+  }
+
+  .shop-section {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
