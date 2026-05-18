@@ -1,0 +1,21 @@
+.historie {
+  display: flex;
+}
+
+.historie_img .historie_text {
+  width: 50%;
+}
+
+.historie_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.historie_text {
+  display: flex;
+  align-items: flex-end; /* placerer indhold nederst */
+  padding: 40px;
+  box-sizing: border-box;
+}
